@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h1>Home Page</h1>
+
+
+{%if user.is_authenticated %}
+<span>Sei loggato come {{user.username}} </span>  
+{%else%}
+<p>Ciao visitatore accedi per entrare... </p>
+{%endif%}
+{%endblock%}

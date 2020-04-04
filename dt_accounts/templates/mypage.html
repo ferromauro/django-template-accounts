@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+ 
+{%block content%}
+
+<h1>Pagina personale</h1>
+
+{% if user.is_authenticated %}
+Benvenuto nella tua area personale <strong> {{user.username}} </strong>
+
+{%else%}
+ 
+Non hai effettuato l'accesso, cortesia <a href="{% url 'login' %}">ACCEDI</a> o <a href="{% url 'signup'%}">REGISTRATI</a>.
+
+{%endif%} 
+
+{%endblock%}
