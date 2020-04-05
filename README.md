@@ -24,4 +24,4 @@ Il progetto prevede di utilizzare il servizio di email backend offerto da Django
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'        
 
-Percla fase di produzione sara necessario impostare un server SMTP.
+Per la fase di produzione sara necessario impostare un server SMTP.
